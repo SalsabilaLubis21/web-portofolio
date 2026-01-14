@@ -2,10 +2,6 @@
 
 This is a personal portfolio project built to showcase my projects, skills, and experience as a web developer. This site was created using modern web technologies to ensure fast performance, responsive design, and an excellent user experience.
 
-## Screenshot
-
-![Portfolio Screenshot](./public/image/screen.png)
-
 ## Technologies Used
 
 - **Next.js**: A React framework for modern, production-ready web applications.
