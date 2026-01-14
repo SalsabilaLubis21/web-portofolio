@@ -1,0 +1,103 @@
+@use "tailwindcss";
+
+:root {
+  --foreground-rgb: rgb(211, 216, 232);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background-color: #0d1224;
+  font-family: var(--font-orbitron);
+}
+
+#sticky-card-1 {
+  --index: 1;
+}
+
+#sticky-card-2 {
+  --index: 2;
+}
+
+#sticky-card-3 {
+  --index: 3;
+}
+
+#sticky-card-4 {
+  --index: 4;
+}
+
+#sticky-card-5 {
+  --index: 5;
+}
+
+#sticky-card-6 {
+  --index: 6;
+}
+
+.sticky-card {
+  position: sticky;
+  top: calc(var(--index) * 2rem);
+}
+
+.glow-container {
+  position: relative;
+  width: 100%;
+}
+
+.glow-card {
+  position: relative;
+}
+
+.glow-card .glows {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  filter: blur(calc(var(--blur) * 1px));
+}
+
+.glow-card .glows::after,
+.glow-card .glows::before {
+  --alpha: var(--active, 0);
+  content: "";
+  background: conic-gradient(
+    from calc(var(--start) * 1deg),
+    #0000,
+    #0000,
+    #0000,
+    #0000,
+    #0000,
+    #0000,
+    #0000,
+    #0000,
+    #0000,
+    #0000,
+    #0000,
+    #8a2be2,
+    #4b0082,
+    #0000ff,
+    #0000,
+    #0000,
+    #0000,
+    #0000,
+    #0000,
+    #0000,
+    #0000,
+    #0000,
+    #0000,
+    #0000,
+    #0000
+  );
+  background-attachment: fixed;
+  position: absolute;
+  inset: -10px;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  opacity: var(--alpha);
+  transition: opacity 0.2s ease;
+}
