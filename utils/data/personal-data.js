@@ -1,7 +1,7 @@
 export const personalData = {
   name: "Salsa",
   profile: "profile.jpeg",
-  designation: "President University",
+  designation: "President University",
   description:
     "My name is Salsa, and I am an Information Technology student specializing in Artificial Intelligence at President University. I have hands-on experience in software and machine learning development, with a strong interest in building web applications and AI-driven solutions. I enjoy solving problems through programming and data-driven approaches, and I am continuously developing my skills through self-directed learning and real-world projects. I am seeking opportunities as a Software Engineer or Machine Learning Engineer where I can contribute to practical, scalable systems.",
   email: "salsabilaherlinslubis@gmail.com",
