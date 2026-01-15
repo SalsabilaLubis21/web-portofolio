@@ -3,12 +3,8 @@
 // @flow strict
 
 import * as React from "react";
-import { useState } from "react";
 
 function ProjectCard({ project }) {
-  const [isExpanded, setIsExpanded] = useState(false);
-  const shortDescription = project.description.slice(0, 100);
-
   return (
     <div className="from-[#0d1224] border-[#1b2c68a0] relative rounded-lg border bg-gradient-to-r to-[#0a0d37] w-full">
       <div className="flex flex-row">
@@ -60,19 +56,8 @@ function ProjectCard({ project }) {
           </div>
           <div className="ml-4 lg:ml-8 mr-2">
             <span className="text-white">Description:</span>
-            <span className="text-cyan-400">
-              {" "}
-              {isExpanded ? project.description : shortDescription}
-            </span>
+            <span className="text-cyan-400"> {project.description}</span>
             <span className="text-gray-400">,</span>
-            {project.description.length > 100 && (
-              <button
-                onClick={() => setIsExpanded(!isExpanded)}
-                className="text-pink-500 ml-2"
-              >
-                {isExpanded ? "Read Less" : "Read More"}
-              </button>
-            )}
           </div>
           <div>
             <span className="text-gray-400">{`};`}</span>
