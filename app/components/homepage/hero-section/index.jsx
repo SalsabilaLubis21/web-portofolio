@@ -22,14 +22,14 @@ function HeroSection() {
         className="absolute -top-[98px] -z-10"
       />
 
-      <div className="grid grid-cols-1 items-start lg:grid-cols-2 lg:gap-12 gap-y-8">
-        <div className="order-2 lg:order-1 flex flex-col items-start justify-center p-2 pb-20 md:pb-10 lg:pt-10">
+      <div className="grid grid-cols-1 items-start lg:grid-cols-5 lg:gap-12 gap-y-8">
+        <div className="order-2 lg:order-1 lg:col-span-3 flex flex-col items-start justify-center p-2 pb-20 md:pb-10 lg:pt-10">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold md:font-extrabold leading-tight md:leading-[3.5rem] text-white">
             Hello, <br />
             This is <span className=" text-pink-500">{personalData.name}</span>
             {` , I'm an Informatics Student at `}
           </h1>
-          <div className="text-3xl md:text-4xl lg:text-5xl font-bold md:font-extrabold leading-tight md:leading-[3.5rem] min-h-[3.5rem]">
+          <div className="text-3xl md:text-4xl lg:text-5xl font-bold md:font-extrabold leading-tight md:leading-[3.5rem] min-h-[7rem]">
             <TypeAnimation
               sequence={[personalData.designation + ".", 1000, " ", 1000]}
               wrapper="span"
@@ -102,7 +102,7 @@ function HeroSection() {
             </Link>
           </div>
         </div>
-        <div className="order-1 lg:order-2 from-[#0d1224] border-[#1b2c68a0] relative rounded-lg border bg-gradient-to-r to-[#0a0d37]">
+        <div className="order-1 lg:order-2 lg:col-span-2 from-[#0d1224] border-[#1b2c68a0] relative rounded-lg border bg-gradient-to-r to-[#0a0d37]">
           <div className="flex flex-row">
             <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-pink-500 to-violet-600"></div>
             <div className="h-[1px] w-full bg-gradient-to-r from-violet-600 to-transparent"></div>
