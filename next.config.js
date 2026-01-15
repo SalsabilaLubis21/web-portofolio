@@ -1,9 +1,8 @@
 const path = require("path");
 
 module.exports = {
-  output: "export",
   sassOptions: {
-    includePaths: [path.join(__dirname, "styles")],
+    includePaths: [path.join(__dirname, "app/css")],
   },
   images: {
     unoptimized: true,
