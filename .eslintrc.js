@@ -1,16 +1,3 @@
 module.exports = {
-  extends: [
-    "plugin:react/recommended",
-    "plugin:react-hooks/recommended",
-    "next/core-web-vitals",
-  ],
-  rules: {
-    "react/react-in-jsx-scope": "off",
-    "react/prop-types": "off",
-  },
-  settings: {
-    react: {
-      version: "detect",
-    },
-  },
+  extends: "next/core-web-vitals",
 };

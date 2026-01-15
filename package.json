@@ -15,11 +15,10 @@
     "@next/third-parties": "latest",
     "axios": "^1.6.8",
     "framer-motion": "^12.25.0",
-    "lottie-react": "^2.4.1",
-    "next": "15.5.8",
-    "nodemailer": "^6.9.15",
-    "react": "^19.2.0",
-    "react-dom": "^19.2.0",
+    "lottie-react": "^2.4.0",
+    "next": "14.2.3",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
     "react-fast-marquee": "^1.6.2",
     "react-google-recaptcha": "^3.1.0",
     "react-icons": "^4.11.0",
@@ -30,11 +29,11 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.16",
-    "autoprefixer": "latest",
-    "eslint": "latest",
-    "eslint-config-next": "latest",
-    "postcss": "latest",
+    "autoprefixer": "10.4.19",
+    "eslint": "8.57.0",
+    "eslint-config-next": "14.2.3",
+    "postcss": "8.4.38",
     "sass": "^1.69.5",
-    "tailwindcss": "latest"
+    "tailwindcss": "3.4.3"
   }
 }
